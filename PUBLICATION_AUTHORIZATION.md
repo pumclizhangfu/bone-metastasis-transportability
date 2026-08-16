@@ -13,9 +13,11 @@ This authorization is interpreted narrowly:
 - authorized licence: MIT for the original project code, explicitly confirmed on
   2026-08-16;
 - not yet authorized: public deposition of the separate companion/source-data archive;
-- not performed: GitHub publication, DOI minting or Zenodo deposition.
+- performed: public GitHub repository creation and push to
+  `https://github.com/pumclizhangfu/bone-metastasis-transportability`;
+- not performed: DOI minting or Zenodo companion deposition.
 
 Zhangfu Li supplied ORCID `0000-0002-0112-1678`; its ISO 7064 MOD 11-2 checksum
 was validated. GitHub publication is currently blocked because the locally
-configured GitHub account `pumclizhangfu` has been re-authenticated. The intended
-remote is `https://github.com/pumclizhangfu/bone-metastasis-transportability`.
+configured GitHub account `pumclizhangfu` was re-authenticated. The public remote
+is `https://github.com/pumclizhangfu/bone-metastasis-transportability`.

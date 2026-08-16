@@ -5,7 +5,7 @@
 - [x] Choose and approve MIT for original project code.
 - [ ] Review companion files for redistribution authority.
 - [ ] Create a clean-environment lock/container and validate at least `verify` plus intended rerender targets.
-- [ ] Create the author-controlled GitHub repository.
+- [x] Create the author-controlled public GitHub repository.
 - [ ] Deposit the frozen companion archive and obtain the real DOI.
 - [x] Create `CITATION.cff` with supplied authors, ORCID, MIT and the intended GitHub URL.
 - [x] Select VIEW and complete target-specific formatting/compliance checks.

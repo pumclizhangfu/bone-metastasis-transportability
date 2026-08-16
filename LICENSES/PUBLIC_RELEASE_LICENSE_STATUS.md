@@ -1,6 +1,7 @@
 # Public-release licence status
 
-- Public code repository: **authorized by the user on 2026-08-16**.
+- Public code repository: **authorized and published on 2026-08-16** at
+  `https://github.com/pumclizhangfu/bone-metastasis-transportability`.
 - Code licence: **MIT, explicitly confirmed by the user on 2026-08-16**.
 - Copyright notice: **Zhangfu Li and contributors**.
 - Third-party data, NODE/OEP matrices, NicheNet priors, reference objects and raw
