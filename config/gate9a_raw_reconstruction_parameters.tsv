@@ -1,0 +1,34 @@
+parameter	value	scope	note
+amendment_version	gate9a_raw_reconstruction_v1	global	supersedes only the unavailable-author-object cell annotation section
+random_seed	20260807	global	fixed for all resampling
+feature_type_primary	Gene Expression	input	Multiplexing Capture is excluded from expression analysis
+gene_key	gene_symbol	input	second features.tsv column
+duplicate_symbol_rule	sum	input	sparse rows sharing a symbol are summed
+minimum_signature_coverage	0.80	input	required in every library for every primary state
+qc_min_features	200	cell	inclusive
+qc_max_features	8000	cell	inclusive
+qc_min_counts	500	cell	inclusive
+qc_max_pct_mito	20	cell	inclusive; mitochondrial symbols begin MT-
+doublet_primary	none	cell	GEO matrices are author-demultiplexed; scDblFinder is sensitivity only
+normalization	logNormCounts	cell	size-factor log normalization for SingleR
+singleR_reference	MonacoImmuneData	cell	frozen local RDS
+singleR_fine_tune	TRUE	cell	fixed
+singleR_prune	TRUE	cell	fixed
+ucell_max_rank	1500	cell	fixed UCell rank cutoff
+myeloid_fallback_markers	LST1|TYROBP|FCER1G|CTSS|AIF1	cell	at least 2 detected when SingleR is pruned/discordant
+t_cell_fallback_markers	CD3D|CD3E|TRAC|CD247	cell	at least 2 detected when SingleR is pruned/discordant
+cd4_support_markers	CD4|IL7R|LTB	cell	at least 1 for CD4_TREG
+cd8_support_markers	CD8A|CD8B	cell	at least 1 for CD8_TEX or CD8_PTEX
+nk_exclusion_markers	KLRD1|NCR1|NCAM1|FCGR3A	cell	at least 2 excludes canonical-fallback T assignment
+margin_reference_cells	exactly_one_core_eligible_state	cell	learned separately within myeloid and T lineages
+margin_quantile	0.05	cell	type 8 quantile; training patients only
+margin_lower_bound	0	cell	negative thresholds are set to zero
+patient_denominator	all_qc_cells	patient	technical replicate counts and denominators are summed
+proportion_pseudocount	0.5	patient	p=(count+0.5)/(N+1)
+patient_transform	logit_then_training_z	patient	mean and SD learned in training patients only
+ecotype_distance	euclidean	patient	distance to three training ecotype centroids
+source_cv	leave_one_patient_out	patient	all threshold/scaling/centroid fitting excludes held-out patient
+minimum_balanced_accuracy	0.70	gate	inclusive
+minimum_per_ecotype_sensitivity	0.60	gate	inclusive for all three ecotypes
+minimum_state_patients	10	gate	a state is present in a patient when at least 10 cells are assigned
+external_data_access	before_source_pass_prohibited	gate	OEP expression matrices remain sealed

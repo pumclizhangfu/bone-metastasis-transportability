@@ -1,0 +1,21 @@
+gene	category	rationale
+FOS	immediate_early	Canonical immediate-early and dissociation-responsive gene
+FOSB	immediate_early	Canonical immediate-early and dissociation-responsive gene
+JUN	immediate_early	Canonical AP-1 immediate-early gene
+JUNB	immediate_early	Canonical AP-1 immediate-early gene
+JUND	immediate_early	AP-1 immediate-early/stress-response gene
+EGR1	immediate_early	Canonical immediate-early gene
+EGR2	immediate_early	Canonical immediate-early gene
+EGR3	immediate_early	Canonical immediate-early gene
+ATF3	stress_response	Acute cellular stress and dissociation-response gene
+IER2	immediate_early	Immediate-early response gene
+IER3	immediate_early	Immediate-early response gene
+HSPA1A	heat_shock	Inducible heat-shock/stress gene
+HSPA1B	heat_shock	Inducible heat-shock/stress gene
+HSP90AA1	heat_shock	Heat-shock response gene
+DDIT3	stress_response	Integrated stress-response gene
+DNAJB1	heat_shock	Heat-shock co-chaperone
+HSPB1	heat_shock	Heat-shock/stress-response gene
+DUSP1	stress_response	Acute MAPK stress-response gene
+PPP1R15A	stress_response	Integrated stress-response gene
+GADD45B	stress_response	Acute stress-response gene

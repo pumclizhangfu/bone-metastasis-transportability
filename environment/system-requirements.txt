@@ -1,0 +1,5 @@
+Documented historical requirements; not a validated lock:
+- R/Bioconductor and Seurat/Harmony/data.table/ggplot2 family packages
+- Python 3.12 standard library for candidate verification
+- system graphics libraries and fonts for publication rendering
+- provider-authorized access for restricted NODE/OEP inputs

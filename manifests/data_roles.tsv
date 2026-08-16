@@ -1,0 +1,9 @@
+accession_or_id	provider	role	access	url	redistributed
+GSE143791	GEO	discovery single-cell cohort	public	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143791	no
+GSE202813	GEO	external single-cell cohort	public	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE202813	no
+GSE266330	GEO	external paired/clinical single-cell support	public	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266330	no
+GSE323357	GEO	spatial transcriptomic cohort	public	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE323357	no
+OEP005136	NODE/BMDC	external bone-metastasis cohort	provider controlled	https://www.biosino.org/node/project/detail/OEP005136	no
+OEZ00021715;OED01122886	NODE/BMDC	paired mBone analysis and archive identifiers	provider controlled	https://www.biosino.org/node/project/detail/OEP005136	no
+GSE225209	GEO	supportive communication co-detection	public	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225209	no
+GSE190772	GEO	prespecified communication support; non-evaluable under primary rule	public	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190772	no

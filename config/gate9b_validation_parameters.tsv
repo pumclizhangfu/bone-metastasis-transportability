@@ -1,0 +1,45 @@
+parameter	value	scope	note
+amendment_version	gate9b_validation_v1	global	frozen before OEP expression count entries are read
+random_seed	20260807	global	fixed for all resampling and permutation
+archive_sha256	9891b9c7f75110eab3623c552aef5c6230a0b27435fae912bf9964fd326c9c75	input	OEP005136 mBone.zip
+expected_archive_samples	53	input	all unpaired mBone directories
+expected_primary_patients	49	input	excludes 3 plasmacytomas and 1 myofibroblastoma
+expected_primary_origins	11	input	including the prespecified Unknown solid-tumor origin
+feature_type_primary	Gene Expression	cell	other feature types excluded
+qc_min_features	200	cell	inclusive; identical to Gate9A
+qc_max_features	8000	cell	inclusive; identical to Gate9A
+qc_min_counts	500	cell	inclusive; identical to Gate9A
+qc_max_pct_mito	20	cell	inclusive; identical to Gate9A
+singleR_reference	MonacoImmuneData	cell	identical frozen RDS and lineage labels as Gate9A
+singleR_fine_tune	TRUE	cell	fixed
+singleR_prune	TRUE	cell	fixed
+ucell_max_rank	1500	cell	fixed
+dual_lineage_rule	unassigned	cell	conservative; identical to Gate9A implementation
+myeloid_margin_threshold	0	cell	frozen Gate9A value
+t_cell_margin_threshold	0	cell	frozen Gate9A value
+patient_margin_threshold	0.0610505224343788	patient	frozen Gate9A 5th percentile among correct LOPO predictions
+patient_transform	logit_then_gse_z	patient	OEP never supplies primary means or SDs
+transfer_distance	euclidean	patient	nearest frozen GSE centroid
+consensus_linkage	average	cluster	fixed
+consensus_distance	euclidean	cluster	patient six-feature matrix
+consensus_k_candidates	2|3|4|5	cluster	K=3 evaluated regardless of optimum
+consensus_iterations	1000	cluster	fixed
+consensus_patient_fraction	0.80	cluster	floor(0.8*n), without replacement
+consensus_feature_fraction	1.00	cluster	all six features every iteration
+pac_lower	0.10	cluster	strict lower boundary
+pac_upper	0.90	cluster	strict upper boundary
+permutation_iterations	10000	agreement	patient labels permuted against fixed K=3 clusters
+cell_subsample_iterations	100	stability	within each patient
+cell_subsample_fraction	0.80	stability	floor(0.8*N) QC cells without replacement
+minimum_k3_cluster_size	5	gate	inclusive
+maximum_k3_pac	0.20	gate	inclusive
+minimum_k3_silhouette	0.25	gate	inclusive
+minimum_ari	0.40	gate	inclusive
+maximum_ari_permutation_p	0.05	gate	strict
+minimum_median_label_stability	0.80	gate	inclusive among non-forced assigned patients
+minimum_within_ecotype_stability	0.70	gate	inclusive median patient stability in every transferred ecotype
+loco_label_retention	all_three	gate	all three non-forced labels remain after each cancer-origin deletion
+loco_topology	diagonal_axis_dominance	gate	matched two-feature axis is largest within each transferred ecotype after each cancer-origin deletion
+patient_deletion_recompute	endpoints_1_to_5	gate	K=3 consensus, agreement, stability, and LOCO topology repeated after each patient deletion
+partial_rule	three_labels_and_stability_and_topology	decision	PARTIAL only if all three labels exist, stability passes, and full-data diagonal topology holds
+external_refitting	prohibited	gate	no OEP-derived changes to state gates, source scaling, centroids, or margins

@@ -1,0 +1,8 @@
+state_id	lineage	core_markers	min_core_detected	additional_gate	assignment_role
+CD14HI_MONO	myeloid	FCN1|VCAN|S100A12|S100A8	2	none	primary
+CD16HI_MONO	myeloid	FCGR3A|LST1|MS4A7|SERPINA1	2	none	primary
+MACROPHAGE	myeloid	C1QA|C1QB|C1QC|MSR1|MAFB	2	none	primary
+OSTEOCLAST	myeloid	CTSK|ACP5|MMP9|ATP6V0D2|TNFRSF11A	2	none	primary
+CD4_TREG	t_cell	FOXP3|CTLA4|IKZF2|TIGIT|ICOS	1	CD4_support_ge_1	primary
+CD8_TEX	t_cell	TOX|TNFRSF9|MIR155HG|GZMK	1	CD8_support_ge_1	primary
+CD8_PTEX	t_cell	GZMK|GZMA|CCL5|KLRK1|TOX	1	CD8_support_ge_1	sensitivity_only

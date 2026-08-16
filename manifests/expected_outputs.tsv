@@ -1,0 +1,8 @@
+artifact	expected	validation
+accepted_figure_files	42	hash_verified_static_payload
+accepted_source_data_files	85	hash_verified_static_payload
+accepted_table_files	3	hash_verified_static_payload
+active_manuscript_and_legends	2	hash_verified_static_payload
+offline_verify	PASS	validated_in_gate12bm
+figure_replay	NOT_VALIDATED	future_gate_required
+full_raw_reconstruction	NOT_VALIDATED	future_gate_required

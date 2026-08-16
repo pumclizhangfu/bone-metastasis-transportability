@@ -1,0 +1,10 @@
+order	stage	entrypoint_group	status
+1	acquisition	config/gate12bm_script_whitelist_v1.tsv stage=acquisition	documented_not_validated
+2	discovery_atlas	config/gate12bm_script_whitelist_v1.tsv stage=discovery	documented_not_validated
+3	lineage_umap	config/gate12bm_script_whitelist_v1.tsv stage=umap	documented_not_validated
+4	communication	config/gate12bm_script_whitelist_v1.tsv stage=communication	documented_not_validated
+5	supportive_projection	config/gate12bm_script_whitelist_v1.tsv stage=supportive_projection	documented_not_validated
+6	external_validation	config/gate12bm_script_whitelist_v1.tsv stage=external_validation	documented_not_validated
+7	spatial	config/gate12bm_script_whitelist_v1.tsv stage=spatial	documented_not_validated
+8	render	config/gate12bm_script_whitelist_v1.tsv stage=render	documented_not_validated
+9	static_verify	workflow/run.sh verify	validated_offline

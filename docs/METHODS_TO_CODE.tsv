@@ -1,0 +1,8 @@
+evidence_block	scripts	final_figure
+Discovery atlas and broad cell classes	scripts/run_gate3_qc.R; scripts/run_gate3b_annotation_pseudobulk.R; scripts/run_gate12a_integrated_atlas.R	Figure 1; Figure S1
+Myeloid state decomposition	scripts/run_gate12b_cell_states.R; scripts/finalize_gate12b_outputs.R	Figure 2
+T/NK state and transcriptional robustness	scripts/run_gate5b_tnk_decomposition.R; scripts/run_gate6b_confounded_robustness.R	Figure 3; Figure S3
+Sender-receiver hypotheses and supportive co-detection	scripts/run_gate12c_sender_receiver.R; scripts/run_gate12c_external_validation.R; scripts/run_gate10s_full.R	Figure 4; Figure S12
+External representation and Axis1	scripts/run_gate8a_gse266330.R; scripts/run_gate8b_oep005136.R; scripts/run_gate12v2_axis1_interpretation.R	Figure 5; Figures S4-S8/S11
+Spatial reconstruction, geometry, and sensitivity	scripts/run_gate12e_reconstruction_rctd.R; scripts/run_gate12v3_spatial_geometry.R; scripts/run_gate12ab_spatial_sensitivity_grid.R	Figure 6; Figures S9-S10
+Final publication rendering	scripts/build_gate12az_literature_standard_figure1.R; scripts/build_gate12az_literature_standard_figures23.R; scripts/build_gate12be_review_driven_figures456.R	Figures 1-6

@@ -1,0 +1,9 @@
+stage	authoritative_run	path_role	validation_level
+publication_payload	Gate12BL run_v1	companion static payload	accepted_hash_verified
+main_figures_1	Gate12AZ	Figure 1 renderer	historical_authoritative
+main_figures_2_3	Gate12AZ	Figures 2-3 renderer	historical_authoritative
+main_figures_4_6	Gate12BE	Figures 4-6 renderer	historical_authoritative
+supplementary_base	Gate12AF/Gate12BD	supplementary renderers	historical_authoritative
+supplementary_s2	Gate12BF v3 -> Gate12BG v4	analysis-unit and CLR repair	historical_authoritative
+integrated_submission	Gate12BH	accepted figure/source-data assembly	accepted
+active_manuscript	Gate12BK -> Gate12BL	evidence-patched active manuscript	accepted_with_open_blockers

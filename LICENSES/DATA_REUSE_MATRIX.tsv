@@ -1,0 +1,8 @@
+material	included	redistribution_status
+Original project code	yes; sanitized allow-list	AUTHOR_LICENSE_DECISION_REQUIRED
+Accepted figures/source data	yes; companion	AUTHOR_CLEARANCE_REQUIRED
+Raw GEO data	no	ACCESSION_ONLY
+NODE/OEP matrices	no	PROVIDER_CONTROLLED
+NicheNet priors	no	THIRD_PARTY
+Immune reference RDS	no	THIRD_PARTY
+Raw histology/source imagery	no	THIRD_PARTY_REVIEW_REQUIRED

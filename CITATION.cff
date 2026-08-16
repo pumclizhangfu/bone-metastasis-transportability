@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the associated article and archived release."
+title: "Pan-cancer bone-metastasis single-cell and spatial transcriptomics reproducibility materials"
+type: software
+authors:
+  - family-names: "Li"
+    given-names: "Zhangfu"
+    orcid: "https://orcid.org/0000-0002-0112-1678"
+  - family-names: "Yang"
+    given-names: "Baicheng"
+  - family-names: "Liu"
+    given-names: "Shiqing"
+  - family-names: "Yu"
+    given-names: "Shengji"
+  - family-names: "Wang"
+    given-names: "Hanzhou"
+version: "1.0.0-prepublication"
+date-released: "2026-08-16"
+repository-code: "https://github.com/pumclizhangfu/bone-metastasis-transportability"
+license: "MIT"
+keywords:
+  - "bone metastasis"
+  - "single-cell RNA sequencing"
+  - "spatial transcriptomics"
+  - "reproducibility"
+  - "transportability"
+abstract: >-
+  Sanitized code, frozen configurations and provenance records supporting a
+  patient-aware, failure-aware multicohort analysis of bone-metastasis single-cell
+  and spatial transcriptomic data. Provider-controlled and third-party inputs are
+  excluded and must be obtained from their original sources.

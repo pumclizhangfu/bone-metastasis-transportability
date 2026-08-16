@@ -1,0 +1,7 @@
+artifact	depends_on	availability
+discovery_atlas	public_raw_data;annotated_discovery_sce	partial; processed SCE not redistributed
+lineage_states	discovery_atlas	scripts only
+communication_hypotheses	lineage_states;nichenet_priors	priors not redistributed
+external_axis1	GSE266330;OEP005136;frozen_signatures	restricted OEP matrices not redistributed
+spatial_geometry	GSE323357;spatial_reconstruction	source data present; raw rerun not validated
+final_figures	discovery_atlas;lineage_states;communication_hypotheses;external_axis1;spatial_geometry	accepted static outputs present

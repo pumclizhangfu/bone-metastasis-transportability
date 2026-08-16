@@ -1,0 +1,8 @@
+claim_scope	figure	code_group	evidence_boundary
+Pan-cohort cellular atlas	Figure 1	stage=discovery; stage=umap	descriptive discovery atlas
+Myeloid state remodeling	Figure 2	stage=discovery	patient-aware discovery and cohort concordance
+T/NK program robustness	Figure 3	stage=discovery	confounder-aware internal robustness
+Sender-receiver hypotheses	Figure 4	stage=communication; stage=supportive_projection	computational hypothesis plus supportive co-detection; not causal
+Cross-origin representation and Axis1	Figure 5	stage=external_validation	heterogeneous external support with preserved failures
+Spatial organization	Figure 6	stage=spatial	section-level spatial association; not patient-level causal inference
+Publication rendering	Figures 1-6 and S1-S12	stage=render	historical authoritative render chain; clean replay not yet validated
